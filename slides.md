@@ -942,10 +942,30 @@ transition: slide-up
 
 ---
 transition: slide-up
+layout: two-cols-header
 ---
 
-<h1>Rye の登<span text-blue>場</text-blue></h1>
+<h1>Rye の登<span text-blue>場</span></h1>
 
 包括的な Python パッケージ & プロジェクト管理ツール
 
-<br />
+::left::
+
+<Tweet id="1649903576750104576" scale="0.5" />
+
+::right::
+
+# `Rye` の特徴
+
+<v-clicks>
+
+- <div>mitsuhiko さん <a href="https://twitter.com/mitsuhiko" target="_blank" rel="noopener noreferrer"><carbon-logo-twitter /></a> <a href="https://github.com/mitsuhiko" target="_blank" rel="noopener noreferrer"><carbon-logo-github /></a> が自分のために開発</div>
+- デフォルトの依存関係なし
+- `virtualenvs` 内に `pip`や `setuptools` なし
+- `uv` を採用
+- OS ごとの Python を利用しない
+- 標準化された `indygreg` Python ビルドを利用
+- `pyproject.toml` に依存関係 & プロジェクト設定
+- `pyproject.toml` を見てよしなに Python 環境
+
+</v-clicks>
