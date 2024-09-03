@@ -494,7 +494,7 @@ level: 2
 transition: fade-out
 ---
 
-<h1>What is <span class="view-transition-slidev">Slide<span text-green>v</span></span>?</h1>
+<h1><span class="view-transition-slidev">Slide<span text-green>v</span></span></h1>
 
 <br />
 <br />
@@ -734,7 +734,7 @@ transition: slide-up
 
 <img v-drag="[421,88,345,345]" src="https://sli.dev/logo.png">
 
-<v-drag pos="664,414,261,\_,-15"undefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefined>
+<v-drag pos="664,414,261,\_,-15">
 
   <div text-center text-3xl border border-main rounded text-green>
     Double-click me!
