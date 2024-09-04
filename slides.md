@@ -734,7 +734,7 @@ transition: slide-up
 
 <img v-drag="[421,88,345,345]" src="https://sli.dev/logo.png">
 
-<v-drag pos="664,414,261,_,-15"undefined>
+<v-drag pos="664,414,261,_,-15">
 
   <div text-center text-3xl border border-main rounded text-green>
     Double-click me!
