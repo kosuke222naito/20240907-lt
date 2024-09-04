@@ -132,8 +132,8 @@ layoutClass: gap-16
   </li>
   <li v-click>Web フロントもやりたい</li>
   <li v-after><span class="text-gradation">Vue</span> <carbon-logo-vue text-green /> が好き</li>
-  <li v-click>since: 2021 (<span text-blue>{{ years }}</span>年r目)</li>
-  <li v-after><span class="color-itf">筑波大</span>卒(非 CS 専攻)</li>
+  <li v-click>since: 2021 (<span text-blue>{{ years }}</span>年目)</li>
+  <li v-after><span class="color-itf">筑波大</span>卒 (非 CS 専攻)</li>
   <li v-click><span text-yellow>柏</span> (<a href="https://toukatsu.connpass.com/">東葛de<span text-green>v</span></a> 運営)</li>
   <li v-click>自作キーボード</li>
 </ul>
@@ -734,7 +734,7 @@ transition: slide-up
 
 <img v-drag="[421,88,345,345]" src="https://sli.dev/logo.png">
 
-<v-drag pos="664,414,261,\_,-15">
+<v-drag pos="664,414,261,_,-15"undefined>
 
   <div text-center text-3xl border border-main rounded text-green>
     Double-click me!
@@ -912,8 +912,11 @@ transition: slide-up
 
 </v-clicks>
 
+<v-click>
+
 最も厄介なのは依存関係管理に `requirements.txt` が使われていたこと
 (昔はこれで事足りていたはず)
+</v-click>
 
 <v-clicks>
 
@@ -935,7 +938,7 @@ transition: slide-up
 
 - `.lock` ファイルでバージョン固定
 - ツールが `pyproject.toml` を読んで自動的に依存関係の解決
-- `.toml` だからパッケージ管理だけじゃなく、
+- `.toml` だからパッケージ管理とプロジェクト管理も
 - 開発依存とプロダクション依存を分離して管理可能に
 
 </v-clicks>
