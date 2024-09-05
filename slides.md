@@ -842,7 +842,7 @@ transition: slide-left
 
 世界中の <span text-blue>V</span>ue カンファレンス
 
-<div grid grid-cols-5 gap-48 items-center >
+<div grid grid-cols-4 gap-16 items-center >
   <Tweet id="1582391536318173184" scale="0.7" h-64 />
   <Tweet id="1762760127625531481" scale="0.7" h-16 />
   <Tweet id="1718194948376596941" scale="0.7" h-64 />
