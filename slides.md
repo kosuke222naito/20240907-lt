@@ -244,7 +244,7 @@ layout: cover
 class: text-left text-8xl
 ---
 
-<span class="text-green emphasized-V">V</span>ue
+<span class="text-green emphasized-V">V</span>ue <logos-vue />
 
 <style>
 .emphasized-V {
@@ -258,7 +258,7 @@ layout: cover
 class: text-center text-7xl
 ---
 
-Slide<span class="text-green">v</span>
+Slide<span class="text-green">v</span> <logos-slidev />
 
 ---
 transition: slide-right
@@ -266,7 +266,7 @@ layout: cover
 class: text-right text-9xl
 ---
 
-u<span class="text-green">v</span>
+<p>u<span class="text-green">v</span> <img src="/images/uv_logo.svg" inline-block w-1em h-1em /></p>
 
 ---
 transition: slide-up
@@ -274,7 +274,7 @@ layout: cover
 class: text-left text-8xl
 ---
 
-<span class="text-green">V</span>S Code
+<span class="text-green">V</span>S Code <logos-visual-studio-code />
 
 ---
 transition: slide-left
@@ -282,7 +282,7 @@ layout: cover
 class: text-center text-7xl
 ---
 
-<span class="text-green">V</span>ite
+<span class="text-green">V</span>ite <logos-vitejs />
 
 ---
 transition: slide-down
@@ -290,7 +290,7 @@ layout: cover
 class: text-right text-9xl
 ---
 
-<span class="text-green">V</span>ercel
+<span class="text-green">V</span>ercel <logos-vercel-icon bg-white />
 
 ---
 transition: slide-right
@@ -298,7 +298,7 @@ layout: cover
 class: text-center text-8xl
 ---
 
-S<span class="text-green">v</span>elte
+S<span class="text-green">v</span>elte <logos-svelte-icon />
 
 ---
 transition: slide-up
@@ -306,7 +306,7 @@ layout: cover
 class: text-left text-7xl
 ---
 
-<span class="text-green">V</span>olta
+<p><span class="text-green">V</span>olta <img src="/images/volta_logo.jpg" inline-block w-1em h-1em /></p>
 
 ---
 transition: slide-down
@@ -314,7 +314,7 @@ layout: cover
 class: text-right text-8xl
 ---
 
-<span class="text-green">V</span>agrant
+<span class="text-green">V</span>agrant <logos-vagrant-icon />
 
 ---
 transition: slide-left
@@ -330,7 +330,7 @@ layout: cover
 class: text-left text-7xl
 ---
 
-<span class="text-green">V</span>im
+<span class="text-green">V</span>im <logos-vim />
 
 ---
 transition: slide-right
@@ -338,7 +338,7 @@ layout: cover
 class: text-center text-8xl
 ---
 
-Ja<span class="text-green">v</span>a
+Ja<span class="text-green">v</span>a <logos-java />
 
 ---
 transition: slide-down
@@ -346,7 +346,7 @@ layout: cover
 class: text-right text-9xl
 ---
 
-Ja<span class="text-green">v</span>aScript
+Ja<span class="text-green">v</span>aScript <logos-javascript />
 
 ---
 transition: slide-left
@@ -354,7 +354,7 @@ layout: cover
 class: text-left text-8xl
 ---
 
-n<span class="text-green">v</span>m
+n<span class="text-green">v</span>m <logos-nvm />
 
 ---
 transition: slide-up
@@ -362,7 +362,7 @@ layout: cover
 class: text-center text-9xl
 ---
 
-<span class="text-green">V</span>8
+<span class="text-green">V</span>8 <logos-v8 />
 
 ---
 transition: slide-right
@@ -370,7 +370,7 @@ layout: cover
 class: text-right text-7xl
 ---
 
-<span class="text-green">v</span>0
+<p><span class="text-green">v</span>0 <img src="/images/v0_logo.png" inline-block w-1em h-1em /></p>
 
 ---
 transition: slide-left
@@ -378,7 +378,7 @@ layout: cover
 class: text-left text-9xl
 ---
 
-<span class="text-green">V</span>alibot
+<p><span class="text-green">V</span>alibot <img src="/images/valibot_logo.jpg" inline-block w-1.2em h-1.2em /></p>
 
 ---
 transition: slide-up
@@ -386,15 +386,23 @@ layout: cover
 class: text-center text-7xl
 ---
 
-Lara<span class="text-green">v</span>el
+Lara<span class="text-green">v</span>el <logos-laravel />
 
 ---
-transition: view-transition
+transition: slide-down
 layout: cover
 class: text-right text-8xl
 ---
 
-<span class="text-green emphasized-V">V</span>lang
+<span class="text-green">V</span>lang <logos-vlang />
+
+---
+transition: view-transition
+layout: cover
+class: text-center text-9xl
+---
+
+<p><span class="text-green emphasized-V">V</span>alkey <img src="/images/valkey_logo.png" inline-block w-1em h-1em /></p>
 
 <style>
 .emphasized-V {
@@ -450,7 +458,8 @@ const itemsRight = ref([
   "v0",
   "Valibot",
   "Laravel",
-  "Vlang"
+  "Vlang",
+  "Valkey"
 ]);
 
 const highlightV = (text) => {
@@ -736,7 +745,7 @@ transition: slide-up
 
 <img v-drag="[421,88,345,345]" src="https://sli.dev/logo.png">
 
-<v-drag pos="664,414,261,\_,-15"undefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefined>
+<v-drag pos="664,414,261,_,-15">
 
   <div text-center text-3xl border border-main rounded text-green>
     Double-click me!
@@ -848,6 +857,14 @@ transition: slide-left
   <Tweet id="1718194948376596941" scale="0.7" h-64 />
   <Tweet id="1182324722316562432" scale="0.7" h-16 />
 </div>
+
+---
+layout: cover
+class: text-left
+transition: slide-up
+---
+
+<h1>u<span text-green>v</span></h1>
 
 ---
 transition: slide-up

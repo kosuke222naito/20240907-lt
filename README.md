@@ -1,5 +1,7 @@
 # Welcome to [Slidev](https://github.com/slidevjs/slidev)!
 
+URL: https://kosuke222naito.github.io/20240907-lt/
+
 To start the slide show:
 
 - `npm install`
