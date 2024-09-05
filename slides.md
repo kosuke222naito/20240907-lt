@@ -197,6 +197,7 @@ ul li span.text-gradation {
 
 ---
 transition: view-transition
+title: V が名前に入ってる技術
 ---
 
 <h1><span class="emphasized-V">V</span></h1>
@@ -492,6 +493,7 @@ level: 2
 
 ---
 transition: fade-out
+title: What is Slidev?
 ---
 
 <h1><span class="view-transition-slidev">Slide<span text-green>v</span></span></h1>
@@ -734,7 +736,7 @@ transition: slide-up
 
 <img v-drag="[421,88,345,345]" src="https://sli.dev/logo.png">
 
-<v-drag pos="664,414,261,_,-15">
+<v-drag pos="664,414,261,\_,-15"undefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefined>
 
   <div text-center text-3xl border border-main rounded text-green>
     Double-click me!
@@ -765,7 +767,8 @@ console.log(
 
 ---
 layout: center
-class: text-center
+class: text-center text-4xl
+level: 2
 ---
 
 # Learn More
@@ -783,25 +786,12 @@ transition: slide-up
 <h1><span text-green>V</span>ue</h1>
 
 ---
-layout: iframe-left
-url: https://vuefes.jp/2023/
----
-
-<h1><span text-green>V</span>ue Fes Japan</h1>
-
----
-layout: iframe-right
-url: https://vuefes.jp/2024/
----
-
-<h1><span text-green>V</span>ue Fes Japan</h1>
-
----
 layout: iframe-right
 url: https:/ja.vuejs.org/about/community-guide
+title: Vue コミュニティ
 ---
 
-<h1><span text-green>V</span>ue コミュニティ</h1>
+<h1><span text-green>V</span>ue コミ<span text-blue>ュ</span>ニティ</h1>
 
 あなたもすでにコミュニティの一員！？
 
@@ -816,9 +806,10 @@ url: https:/ja.vuejs.org/about/community-guide
 
 ---
 transition: slide-up
+title: 「コミュニティとはグラデーション」
 ---
 
-# 「コミュニティとはグラデーション」
+<h1><span text-blue>「</span>コミュニティとはグラデーション<span text-blue>」</span></h1>
 
 [【初学者にこそ伝えたい】Vue.js コミュニティ入門](https://zenn.dev/comm_vue_nuxt/articles/vue-community) より引用
 
@@ -845,10 +836,18 @@ transition: slide-up
 
 ---
 transition: slide-left
-layout: center
 ---
 
-# コミュニティ
+<h1>コミュニ<span text-blue>テ</span>ィ</h1>
+
+世界中の <span text-blue>V</span>ue カンファレンス
+
+<div grid grid-cols-5 gap-48 items-center >
+  <Tweet id="1582391536318173184" scale="0.7" h-64 />
+  <Tweet id="1762760127625531481" scale="0.7" h-16 />
+  <Tweet id="1718194948376596941" scale="0.7" h-64 />
+  <Tweet id="1182324722316562432" scale="0.7" h-16 />
+</div>
 
 ---
 transition: slide-up
@@ -948,9 +947,9 @@ transition: slide-up
 layout: two-cols-header
 ---
 
-<h1>Rye の登<span text-blue>場</span></h1>
+<h1>Rye の登<span text-blue>場</span> <a href="https://rye.astral.sh/" target="_blank" rel="noopener noreferrer"> <simple-icons-rye /></a></h1>
 
-包括的な Python パッケージ & プロジェクト管理ツール
+パッケージ & プロジェクト管理
 
 ::left::
 
@@ -958,13 +957,11 @@ layout: two-cols-header
 
 ::right::
 
-# `Rye` の特徴
-
 <v-clicks>
 
 - <div>mitsuhiko さん <a href="https://twitter.com/mitsuhiko" target="_blank" rel="noopener noreferrer"><carbon-logo-twitter /></a> <a href="https://github.com/mitsuhiko" target="_blank" rel="noopener noreferrer"><carbon-logo-github /></a> が自分のために開発</div>
 - デフォルトの依存関係なし
-- `virtualenvs` 内に `pip`や `setuptools` なし
+- `virtualenv` を利用
 - `uv` を採用
 - OS ごとの Python を利用しない
 - 標準化された `indygreg` Python ビルドを利用
@@ -972,3 +969,82 @@ layout: two-cols-header
 - `pyproject.toml` を見てよしなに Python 環境
 
 </v-clicks>
+
+<br />
+
+<v-click>
+Rye 自体が優れた機能を提供しているのではなく、
+</v-click>
+
+<br />
+
+<span v-click v-mark.yellow>
+エコシステムのツールに委譲している。
+</span>
+
+---
+transition: slide-up
+layout: two-cols-header
+---
+
+<h1>u<span text-green>v</span></h1>
+
+Rust 製高速 Python パッケージインストーラー & リゾルバー
+
+::left::
+
+<Tweet id="1758252944409956675" scale="0.5" />
+
+::right::
+
+<v-clicks>
+
+- [Ruff](https://astral.sh/ruff) を手がける [astral](https://astral.sh/) 社製
+- `pip`, `pip-tools` を代替する簡単なツール
+- `virtualenv` の代わりも
+- 高速
+- `pip` のインターフェース
+- Python に依存していないバイナリ
+- グローバル Python のバージョンに依存しない
+
+</v-clicks>
+
+---
+transition: slide-left
+---
+
+<h1>Rye & u<span text-green>v</span></h1>
+
+`Rye` も astral 社へ
+
+<v-clicks>
+
+- `Rye` と `uv` は目指している地点が近かった
+- `Rye` 作者と astral 社の話し合いのもと、
+- astral 社で `Rye` を管理することに！
+- そして最終的には `uv` と `Rye` が一つになって、
+- 完全体 "cargo for Python" へ！
+
+</v-clicks>
+
+---
+layout: two-cols
+---
+
+<h1>ま<span text-blue>と</span>め</h1>
+
+名前に v って入ってること多くない？
+
+<br />
+
+<div text-2xl>
+
+- Slide<span text-green>v</span> <logos-slidev /> で一緒に遊ぼう！
+- <span text-green>V</span>ue <logos-vue animate-ping /> Fes Japan 2024
+- 時代はやっぱり Rust <skill-icons-rust /> <v-click>かも？</v-click>
+
+</div>
+
+::right::
+
+<Tweet id="1718194948376596941"/>
