@@ -84,6 +84,8 @@ transition: slide-left
 
 <h1>Table <span text-blue>o</span>f contents</h1>
 
+おしながき
+
 <Toc minDepth="1" maxDepth="1"></Toc>
 
 ---
@@ -118,7 +120,6 @@ layoutClass: gap-16
 <Tweet
   id="1764917140338147519"
   scale="0.6"
-  v-click="2"
 />
 
 ::right::
@@ -127,16 +128,18 @@ layoutClass: gap-16
   <span class="text-gradation">I'm ナイトウ</span>
 </h1>
 
+<br />
+
 <ul class="text-2xl">
-  <li v-click>
+  <li>
     <span class="color-python">Python</span> <carbon-logo-python text-blue /> で Web バックエンド
   </li>
-  <li v-click>Web フロントもやりたい</li>
+  <li>Web フロントもやりたい</li>
   <li v-after><span class="text-gradation">Vue</span> <carbon-logo-vue text-green /> が好き</li>
-  <li v-click>since: 2021 (<span text-blue>{{ years }}</span>年目)</li>
+  <li>since: 2021 (<span text-blue>{{ years }}</span>年目)</li>
   <li v-after><span class="color-itf">筑波大</span>卒 (非 CS 専攻)</li>
-  <li v-click><span text-yellow>柏</span> (<a href="https://toukatsu.connpass.com/">東葛de<span text-green>v</span></a> 運営)</li>
-  <li v-click>自作キーボード</li>
+  <li><span text-yellow>柏</span> (<a href="https://toukatsu.connpass.com/">東葛de<span text-green>v</span></a> 運営)</li>
+  <li>自作キーボード</li>
 </ul>
 
 <script setup lang="ts">
@@ -749,7 +752,7 @@ transition: slide-up
 
 <img v-drag="[421,88,345,345]" src="https://sli.dev/logo.png">
 
-<v-drag pos="664,414,261,\_,-15"undefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefined>
+<v-drag pos="664,414,261,_,-15"undefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefined>
 
   <div text-center text-3xl border border-main rounded text-green>
     Double-click me!
@@ -926,29 +929,25 @@ transition: slide-up
 
 <br />
 
-<v-clicks>
-
 - どのツールもいいところと課題があった
   - pip: シンプル but 依存関係管理が困難
   - poetry: 依存関係 & プロジェクト管理 but 速くない
 - 併用するとコンフリクトしたり
 - 互換性なかったり
 
-</v-clicks>
-
 <v-click>
 
-依存関係管理に `requirements.txt` が使われていたことも
+- 依存関係管理に `requirements.txt` が使われていたことも
 
 </v-click>
 
-<v-clicks>
+<v-click>
 
 - バージョンの固定(`.lock`)ができない
 - 手動で管理
 - 複数環境(`dev`, `staging`, `prod`)の管理が難しい
 
-</v-clicks>
+</v-click>
 
 ---
 transition: slide-up
@@ -961,14 +960,10 @@ transition: slide-up
 <br />
 <br />
 
-<v-clicks>
-
 - `.lock` ファイルでバージョン固定
 - ツールが `pyproject.toml` を読んで自動的に依存関係の解決
 - パッケージ管理とプロジェクト管理も
 - 開発依存とプロダクション依存を分離して管理可能に
-
-</v-clicks>
 
 ---
 transition: slide-up
@@ -985,7 +980,7 @@ layout: two-cols-header
 
 ::right::
 
-<v-clicks>
+<v-click>
 
 - <div>mitsuhiko さん <a href="https://twitter.com/mitsuhiko" target="_blank" rel="noopener noreferrer"><carbon-logo-twitter /></a> <a href="https://github.com/mitsuhiko" target="_blank" rel="noopener noreferrer"><carbon-logo-github /></a> が自分のために開発</div>
 - デフォルトの依存関係なし
@@ -996,7 +991,7 @@ layout: two-cols-header
 - `pyproject.toml` に依存関係 & プロジェクト設定
 - `pyproject.toml` を見てよしなに Python 環境
 
-</v-clicks>
+</v-click>
 
 <br />
 
@@ -1019,13 +1014,15 @@ layout: two-cols-header
 
 Rust 製高速 Python パッケージインストーラー & リゾルバー
 
+<br />
+
 ::left::
 
 <Tweet id="1758252944409956675" scale="0.5" />
 
 ::right::
 
-<v-clicks>
+<v-click>
 
 - [Ruff](https://astral.sh/ruff) を手がける [astral](https://astral.sh/) 社製
 - `pip`, `pip-tools` を代替する簡単なツール
@@ -1035,7 +1032,7 @@ Rust 製高速 Python パッケージインストーラー & リゾルバー
 - Python に依存していないバイナリ
 - グローバル Python のバージョンに依存しない
 
-</v-clicks>
+</v-click>
 
 ---
 transition: slide-left
@@ -1048,9 +1045,10 @@ transition: slide-left
 <br />
 <br />
 
+- `Rye` と `uv` は目指している地点が近かった
+
 <v-clicks>
 
-- `Rye` と `uv` は目指している地点が近かった
 - `Rye` 作者と astral 社の話し合いのもと、
 - astral 社で `Rye` を管理することに！
 - そして最終的には `uv` と `Rye` が一つになって、
