@@ -74,7 +74,7 @@ level:
 import { ref } from "vue";
 import { useQRCode } from "@vueuse/integrations/useQRCode";
 
-const text = ref("まだデプロイしてない");
+const text = ref("https://kosuke222naito.github.io/20240907-lt/");
 const qrcode = useQRCode(text);
 </script>
 
@@ -508,7 +508,8 @@ title: What is Slidev?
 
 <h1><span class="view-transition-slidev">Slide<span text-green>v</span></span></h1>
 
-<br />
+Presentation Slides for Developers
+
 <br />
 <br />
 
@@ -556,27 +557,26 @@ level: 2
 
 <h1>クリック<span text-blue>ア</span>ニメーション</h1>
 
+<br />
+
 <div v-click>
 
-クリックすると現れる
+`v-click`
 
 ```html
-<div v-click>クリックすると現れる</div>
+<div v-click>v-click</div>
 ```
 
 </div>
 
-<br>
+<br />
 
 <v-click>
 
-<span v-mark.red="3"><code>v-mark</code> ディレクティブ</span>は
-<span v-mark.circle.orange="4">インラインマーカー</span>
-
-(Powered by [Rough Notation](https://roughnotation.com/))
+<span v-mark.green="3" v-mark.circle.blue="4"><code>v-mark</code></span>
 
 ```html
-<span v-mark.underline.orange>inline markers</span>
+<span v-mark.green="3" v-mark.circle.blue="4">v-mark</span>
 ```
 
 </v-click>
@@ -749,7 +749,7 @@ transition: slide-up
 
 <img v-drag="[421,88,345,345]" src="https://sli.dev/logo.png">
 
-<v-drag pos="664,414,261,\_,-15"undefinedundefinedundefinedundefined>
+<v-drag pos="664,414,261,\_,-15"undefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefined>
 
   <div text-center text-3xl border border-main rounded text-green>
     Double-click me!
@@ -816,10 +816,10 @@ title: Vue コミュニティ
 
 - 仲<span text-blue>間</span>のユーザーを助ける
 - issue のトリアージ<span text-blue>を</span>助ける
-- コー<span text-blue>ド</span>の貢献
-- 経験を共<span text-blue>有</span>する
+- コー<span text-blue>ド</span>の貢献(バグ修正、新機能)
+- 経験を共<span text-blue>有</span>する(記事、ブログ)
 - ドキュメントを翻訳す<span text-blue>る</span>
-- コミュニ<span text-blue>テ</span>ィのリーダーになる
+- イベント<span text-blue>で</span>発表する、支援する
 
 ---
 transition: slide-up
@@ -905,7 +905,7 @@ transition: slide-up
 
 <h1>Python やるならまずは u<span text-green>v</span> <span text-blue >？</span></h1>
 
-よさそうな感じがめちゃする
+one-stop shop tool for Python
 
 - Rust 製で高速
 - Python 自体のインストール & バージョン管理
@@ -944,7 +944,7 @@ transition: slide-up
 
 <v-clicks>
 
-- バージョンの固定(.lock)ができない
+- バージョンの固定(`.lock`)ができない
 - 手動で管理
 - 複数環境(`dev`, `staging`, `prod`)の管理が難しい
 
@@ -958,11 +958,14 @@ transition: slide-up
 
 モダンなパッケージ管理へ
 
+<br />
+<br />
+
 <v-clicks>
 
 - `.lock` ファイルでバージョン固定
 - ツールが `pyproject.toml` を読んで自動的に依存関係の解決
-- `.toml` だからパッケージ管理とプロジェクト管理も
+- パッケージ管理とプロジェクト管理も
 - 開発依存とプロダクション依存を分離して管理可能に
 
 </v-clicks>
@@ -1041,6 +1044,9 @@ transition: slide-left
 <h1>Rye & u<span text-green>v</span></h1>
 
 `Rye` も astral 社へ
+
+<br />
+<br />
 
 <v-clicks>
 
