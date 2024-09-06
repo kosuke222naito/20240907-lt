@@ -782,7 +782,7 @@ console.log(
 
 ---
 layout: center
-transition: slide-up
+transition: slide-left
 class: text-center text-4xl
 level: 2
 ---
