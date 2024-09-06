@@ -52,8 +52,9 @@ h1::first-letter {
 </style>
 
 ---
-title: slide-link
-level: 2
+title: スライドはこちらで
+transition: slide-left
+level:
 ---
 
 <h1>こ<span text-blue>の</span>スライドはこちらで</h1>
@@ -78,12 +79,12 @@ const qrcode = useQRCode(text);
 </script>
 
 ---
-transition: fade
+transition: slide-left
 ---
 
 <h1>Table <span text-blue>o</span>f contents</h1>
 
-<Toc v-click minDepth="1" maxDepth="1"></Toc>
+<Toc minDepth="1" maxDepth="1"></Toc>
 
 ---
 transition: slide-left
@@ -370,7 +371,7 @@ layout: cover
 class: text-right text-7xl
 ---
 
-<p><span class="text-green">v</span>0 <img src="/images/v0_logo.png" inline-block w-1em h-1em /></p>
+<p><span class="text-green">v</span>0 <img src="/images/v0_logo.png" inline-block w-2em h-2em /></p>
 
 ---
 transition: slide-left
@@ -411,7 +412,7 @@ class: text-center text-9xl
 </style>
 
 ---
-transition: fade-out
+transition: slide-up
 layout: two-cols-header
 ---
 
@@ -482,7 +483,7 @@ transition: view-transition
 level: 2
 ---
 
-<h1>今日<span text-blue>は</span>その中でもこれを</h1>
+<h1>今日<span text-blue>話</span>すのは</h1>
 
 <br />
 <br />
@@ -501,7 +502,7 @@ level: 2
 </style>
 
 ---
-transition: fade-out
+transition: slide-up
 title: What is Slidev?
 ---
 
@@ -549,7 +550,7 @@ level: 2
 </div>
 
 ---
-transition: fade-out
+transition: slide-up
 level: 2
 ---
 
@@ -587,12 +588,13 @@ level: 2
 </div>
 
 ---
+transition: slide-up
 level: 2
 ---
 
 <h1>Shiki <span text-blue>M</span>agic Mo<span text-green>v</span>e</h1>
 
-Powered by [shiki-magic-move](https://shiki-magic-move.netlify.app/)
+<br />
 
 <br />
 
@@ -659,10 +661,12 @@ const author = {
 ````
 
 ---
+transition: slide-up
+---
 
 <h1>Motio<span text-blue>n</span>s</h1>
 
-Powered by [@vueuse/motion](https://motion.vueuse.org/)
+<br />
 
 ```html
 <div
@@ -745,7 +749,7 @@ transition: slide-up
 
 <img v-drag="[421,88,345,345]" src="https://sli.dev/logo.png">
 
-<v-drag pos="664,414,261,_,-15">
+<v-drag pos="664,414,261,\_,-15"undefinedundefinedundefinedundefined>
 
   <div text-center text-3xl border border-main rounded text-green>
     Double-click me!
@@ -754,6 +758,8 @@ transition: slide-up
 
 <v-drag-arrow pos="111,348,253,46" two-way />
 
+---
+transition: slide-up
 ---
 
 <h1>Monaco <span text-blue>E</span>ditor</h1>
@@ -776,6 +782,7 @@ console.log(
 
 ---
 layout: center
+transition: slide-up
 class: text-center text-4xl
 level: 2
 ---
@@ -795,14 +802,15 @@ transition: slide-up
 <h1><span text-green>V</span>ue</h1>
 
 ---
-layout: iframe-right
-url: https:/ja.vuejs.org/about/community-guide
+transition: slide-up
 title: Vue コミュニティ
 ---
 
 <h1><span text-green>V</span>ue コミ<span text-blue>ュ</span>ニティ</h1>
 
 あなたもすでにコミュニティの一員！？
+
+<br />
 
 <span text-blue>で</span>きること
 
@@ -815,7 +823,6 @@ title: Vue コミュニティ
 
 ---
 transition: slide-up
-title: 「コミュニティとはグラデーション」
 ---
 
 <h1><span text-blue>「</span>コミュニティとはグラデーション<span text-blue>」</span></h1>
@@ -851,7 +858,7 @@ transition: slide-left
 
 世界中の <span text-blue>V</span>ue カンファレンス
 
-<div grid grid-cols-4 gap-16 items-center >
+<div grid grid-cols-4 gap-x-3 items-center >
   <Tweet id="1582391536318173184" scale="0.7" h-64 />
   <Tweet id="1762760127625531481" scale="0.7" h-16 />
   <Tweet id="1718194948376596941" scale="0.7" h-64 />
@@ -868,6 +875,7 @@ transition: slide-up
 
 ---
 transition: slide-up
+title: What is uv? (cargo for Python?)
 ---
 
 <h1><span text-blue>u</span><span text-green>v</span></h1>
@@ -895,7 +903,7 @@ Rust 製 Python 用パッケージ & プロジェクトマネージャー
 transition: slide-up
 ---
 
-<h1>Python やるなら u<span text-green>v</span> だけでよくなる<span text-blue >？</span></h1>
+<h1>Python やるならまずは u<span text-green>v</span> <span text-blue >？</span></h1>
 
 よさそうな感じがめちゃする
 
@@ -905,8 +913,8 @@ transition: slide-up
 - Python スクリプトの実行
 - プロジェクト管理
 - ツール管理
-- 慣れ親しんだ pip インターフェースもある
-- uv 自体のアップデートなど各種ユーティリティ
+- 慣れ親しんだ pip インターフェース
+- u<span text-blue>v</span> 自体のアップデートなど各種ユーティリティ
 
 ---
 transition: slide-up
@@ -920,7 +928,7 @@ transition: slide-up
 
 <v-clicks>
 
-- どのツールもメリデメがある
+- どのツールもいいところと課題があった
   - pip: シンプル but 依存関係管理が困難
   - poetry: 依存関係 & プロジェクト管理 but 速くない
 - 併用するとコンフリクトしたり
@@ -930,8 +938,8 @@ transition: slide-up
 
 <v-click>
 
-最も厄介なのは依存関係管理に `requirements.txt` が使われていたこと
-(昔はこれで事足りていたはず)
+依存関係管理に `requirements.txt` が使われていたことも
+
 </v-click>
 
 <v-clicks>
@@ -1046,11 +1054,12 @@ transition: slide-left
 
 ---
 layout: two-cols
+title: まとめ
 ---
 
 <h1>ま<span text-blue>と</span>め</h1>
 
-名前に v って入ってること多くない？
+名前に V 入ってること多くない？
 
 <br />
 
@@ -1058,7 +1067,13 @@ layout: two-cols
 
 - Slide<span text-green>v</span> <logos-slidev /> で一緒に遊ぼう！
 - <span text-green>V</span>ue <logos-vue animate-ping /> Fes Japan 2024
-- 時代はやっぱり Rust <skill-icons-rust /> <v-click>かも？</v-click>
+- ほんとに u<span text-green>v</span> 流行ってほしい
+
+<v-click>
+
+- 時代はやっぱり Rust <skill-icons-rust /> かも？
+
+</v-click>
 
 </div>
 
