@@ -11,6 +11,9 @@ importers:
       '@iconify-json/logos':
         specifier: ^1.2.0
         version: 1.2.0
+      '@iconify-json/openmoji':
+        specifier: ^1.2.0
+        version: 1.2.0
       '@iconify-json/simple-icons':
         specifier: ^1.2.1
         version: 1.2.1
@@ -520,6 +523,9 @@ packages:
 
   '@iconify-json/logos@1.2.0':
     resolution: {integrity: sha512-VkU9QSqeZR2guWbecdqkcoZEAJfgJJTUm6QAsypuZQ7Cve6zy39wOXDjp2H31I8QyQy4O3Cz96+pNji6UQFg4w==}
+
+  '@iconify-json/openmoji@1.2.0':
+    resolution: {integrity: sha512-PfNE2Q9V7TI2G1yyYb0wn1veS9+ABHCUVFtI1KTpIt1sDtm50dmqWoi41OmpyZQJ9Zbc1qVOM4asmDF/qMvhFg==}
 
   '@iconify-json/ph@1.2.0':
     resolution: {integrity: sha512-013eLpgTmX1lACOuDnkuhC7gRHyYj9w/j8SyDmlyUYvsKQrwdRsv1otcXtwH3DevuDAzSkreeeRsCeez+gTyVA==}
@@ -3409,6 +3415,10 @@ snapshots:
       '@iconify/types': 2.0.0
 
   '@iconify-json/logos@1.2.0':
+    dependencies:
+      '@iconify/types': 2.0.0
+
+  '@iconify-json/openmoji@1.2.0':
     dependencies:
       '@iconify/types': 2.0.0
 

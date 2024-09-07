@@ -481,6 +481,10 @@ const highlightV = (text) => {
 }
 </style>
 
+<!--
+ここで他に何か浮かぶ人がいないかを聞いてみる
+-->
+
 ---
 transition: view-transition
 level: 2
@@ -503,6 +507,23 @@ level: 2
   view-transition-name: view-transition-slidev;
 }
 </style>
+
+---
+transition: view-transition
+layout: center
+---
+
+<h1><span class="view-transition-slidev">Slide<span text-green>v</span></span></h1>
+
+<style>
+.view-transition-slidev {
+  view-transition-name: view-transition-slidev;
+}
+</style>
+
+<!--
+まずは Slidev から
+-->
 
 ---
 transition: slide-up
@@ -663,6 +684,10 @@ const author = {
 ```
 ````
 
+<!--
+Vue2 から Vue3 への移行の例のはず
+-->
+
 ---
 transition: slide-up
 ---
@@ -752,7 +777,7 @@ transition: slide-up
 
 <img v-drag="[421,88,345,345]" src="https://sli.dev/logo.png">
 
-<v-drag pos="664,414,261,\_,-15"undefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefined>
+<v-drag pos="664,414,261,_,-15">
 
   <div text-center text-3xl border border-main rounded text-green>
     Double-click me!
@@ -855,7 +880,7 @@ transition: slide-up
 - Twitter, Discord でわち<span text-blue>ゃ</span>わちゃする
 
 ---
-transition: slide-left
+transition: slide-up
 ---
 
 <h1>コミュニ<span text-blue>テ</span>ィ</h1>
@@ -868,6 +893,33 @@ transition: slide-left
   <Tweet id="1718194948376596941" scale="0.7" h-64 />
   <Tweet id="1182324722316562432" scale="0.7" h-16 />
 </div>
+
+---
+transition: slide-left
+---
+
+<h1><span text-green>V</span>ue <logos-vue /> Fes <span text-blue>J</span>apan <openmoji-flag-japan /> 2024</h1>
+
+2024.10.19 Sat @ Otemachi PLACE HALL & CONFERENCE
+
+<div
+  mt-10
+  flex="~ col"
+  gap-16
+  justify-center
+  items-center
+>
+  <input v-model="text" type="text" w-full />
+  <img :src="qrcode" alt="QR Code" w-64/>r
+</div>
+
+<script setup>
+import { ref } from "vue";
+import { useQRCode } from "@vueuse/integrations/useQRCode";
+
+const text = ref("https://vuefes.jp/2024/");
+const qrcode = useQRCode(text);
+</script>
 
 ---
 layout: cover
@@ -1076,12 +1128,6 @@ title: まとめ
 - Slide<span text-green>v</span> <logos-slidev /> で一緒に遊ぼう！
 - <span text-green>V</span>ue <logos-vue animate-ping /> Fes Japan 2024
 - ほんとに u<span text-green>v</span> 流行ってほしい
-
-<v-click>
-
-- 時代はやっぱり Rust <skill-icons-rust /> かも？
-
-</v-click>
 
 </div>
 
