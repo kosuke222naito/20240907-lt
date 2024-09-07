@@ -752,7 +752,7 @@ transition: slide-up
 
 <img v-drag="[421,88,345,345]" src="https://sli.dev/logo.png">
 
-<v-drag pos="664,414,261,_,-15"undefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefined>
+<v-drag pos="664,414,261,\_,-15"undefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefinedundefined>
 
   <div text-center text-3xl border border-main rounded text-green>
     Double-click me!
@@ -826,11 +826,12 @@ title: Vue コミュニティ
 
 ---
 transition: slide-up
+class: bg-white
 ---
 
-<h1><span text-blue>「</span>コミュニティとはグラデーション<span text-blue>」</span></h1>
+<h1 text-black><span text-blue>「</span>コミュニティとはグラデーション<span text-blue>」</span></h1>
 
-[【初学者にこそ伝えたい】Vue.js コミュニティ入門](https://zenn.dev/comm_vue_nuxt/articles/vue-community) より引用
+<span text-gray >[【初学者にこそ伝えたい】Vue.js コミュニティ入門](https://zenn.dev/comm_vue_nuxt/articles/vue-community) より引用</span>
 
 <div flex justify-center items-center>
   <img src="/images/vue_community_gradation.png" h-400px />
@@ -909,6 +910,8 @@ transition: slide-up
 <h1>Python やるならまずは u<span text-green>v</span> <span text-blue >？</span></h1>
 
 one-stop shop tool for Python
+
+<br />
 
 - Rust 製で高速
 - Python 自体のインストール & バージョン管理
@@ -1010,7 +1013,7 @@ transition: slide-up
 layout: two-cols-header
 ---
 
-<h1>u<span text-green>v</span></h1>
+<h1>当時のu<span text-green>v</span></h1>
 
 Rust 製高速 Python パッケージインストーラー & リゾルバー
 
@@ -1025,7 +1028,8 @@ Rust 製高速 Python パッケージインストーラー & リゾルバー
 <v-click>
 
 - [Ruff](https://astral.sh/ruff) を手がける [astral](https://astral.sh/) 社製
-- `pip`, `pip-tools` を代替する簡単なツール
+- `pip`, `pip-tools` を代替する
+- 使いやすいツール
 - `virtualenv` の代わりも
 - 高速
 - `pip` のインターフェース
@@ -1052,7 +1056,7 @@ transition: slide-left
 - `Rye` 作者と astral 社の話し合いのもと、
 - astral 社で `Rye` を管理することに！
 - そして最終的には `uv` と `Rye` が一つになって、
-- 完全体 "cargo for Python" へ！
+- 完全体 "cargo for Python" の実現を目指す！
 
 </v-clicks>
 
